@@ -10,9 +10,10 @@ sudo apt-get update
 output "Upgrade OS - Done!"
 output "Install CPUminer"
 sudo apt-get install -y build-essential libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake git screen
-cd /dongqn/
+cd /home/dongqn/
 git clone https://github.com/JayDDee/cpuminer-opt
 cd cpuminer-opt
 ./build.sh
 cp cpuminer ../
+output "";
 cd
